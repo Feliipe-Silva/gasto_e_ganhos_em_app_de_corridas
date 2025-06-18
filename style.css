@@ -27,18 +27,64 @@ body {
     margin: 0 0 0 20px;
 }
 
+  /*     -------------      GEMINI    -----------------   */
+
 .regiao-principal > div {
-    height: 100px;
+    height: auto;
     margin-top: 20px;
-    border: solid 1px;
+    border: solid 1px #ccc;
     width: 350px;
-    /* display: flex; */
-    /* flex-wrap: wrap; */
+    display: flex;
+    flex-direction: column; /* Manter a coluna principal para as "linhas" */
     margin: auto;
     background-color: white;
     border-radius: 5px;
-    padding: 5px;
+    padding: 15px;
+    gap: 15px; /* Aumentei o espaçamento entre as linhas */
 }
+
+/* Criar um contêiner flexível para cada par label/input */
+.regiao-principal .input-group {
+    display: flex; /* Transforma este grupo em um flex container */
+    align-items: center; /* Alinha verticalmente label e input no centro */
+    gap: 2px; /* Espaço entre a label e o input */
+}
+
+.regiao-principal label {
+    font-weight: bold;
+    /* Remover margin-bottom aqui, pois o gap do .input-group já cuida do espaçamento */
+    margin-bottom: 0;
+    flex-shrink: 0; /* Impede que a label encolha */
+    width: 100px; /* Defina uma largura fixa para as labels para alinhamento */
+}
+
+.regiao-principal input[type="number"] {
+    flex-grow: 1; /* Permite que o input preencha o espaço restante */
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    /* Remover margin-bottom aqui */
+    margin-bottom: 0;
+}
+
+.regiao-principal input[type="button"] {
+    width: 50%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-left: 50%;
+}
+
+.regiao-principal input[type="button"]:hover {
+    background-color: #0056b3;
+}
+
+  /*     -------------      GEMINI    -----------------   */
 
 .regiao-principal div label {
     font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
