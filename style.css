@@ -1,0 +1,80 @@
+@charset "Utf-8";
+ *{margin: 0%; padding: 0%; box-sizing: border-box;}
+
+body {
+    background-color: rgb(142, 142, 255);
+}
+
+.cabecalho {
+    border-bottom: 3px solid;
+    margin-bottom: 30px;
+    background-color: white;
+}
+
+.cabecalho > h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(4, 42, 255);
+    font-style: italic;
+    font-size: 25px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    border-bottom: 1px solid;
+    margin: 0 100px;
+}
+
+.cabecalho > span {
+    padding: 0px;
+    margin: 0 0 0 20px;
+}
+
+.regiao-principal > div {
+    height: 100px;
+    margin-top: 20px;
+    border: solid 1px;
+    width: 350px;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    margin: auto;
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.regiao-principal div label {
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    font-weight: 700;
+}
+
+.regiao-principal input {
+    width: 100px;
+    margin-left: 10px;
+    /* display: block; */
+}
+
+.secao_resultado {
+    border: 1px solid;
+    height: 200px;
+    width: 350px;
+    margin: auto;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    font-size: 15px;
+}
+
+.secao_resultado div > h3 {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+#lucro_ou_perda > strong {
+    color: red;
+}
+
+#lucro_ou_perda > #parabens {
+    color: green;
+}

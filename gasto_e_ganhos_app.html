@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULAR GASTOS E GANHOS</title>
+    <link rel="stylesheet" href="style.css"> <!-- CSS -->
+    <script src="interecao.js"></script> <!-- javaCript -->
+
+</head>
+<body>
+    <header class="cabecalho">
+        <h1>RESGISTRO E CALCULOS DE GANHOS</h1>
+        <span>Corres do apps</span>
+    </header>
+
+    
+    <main class="regiao-principal">
+        <div>
+            <label for="99-POP">99-POP:</label>
+            <input type="number" id="ap_99pop" min="0" >
+
+            <label for="UBER">UBER:</label>
+            <input type="number" id="ap_uber" min="0">
+
+            <label for="Combustível">Combustível: </label>
+            <input type="number" id="combustivel" min="0" required>
+
+            <label for="km rodados">Km rodados:</label>
+            <input type="number" id="total_km" min="0" required>
+
+            <input type="button" value="Calcular" onclick="calcular()">
+        </div>
+    </main>
+
+
+    <section class="secao_resultado">
+        <div>
+            <h3>RESULTADO DOS CALCULOS:</h3>
+            <p id="data_atual">Data de hoje: </p>
+            <p id="res"> --  </p>
+            <p id="real_km"> --  </p>
+            <p id="lucro_ou_perda"> --  </p>
+            
+        </div>
+    </section>
+</body>
+</html>
