@@ -7,23 +7,33 @@ function calcular() {
   let ap_99pop = document.getElementById('ap_99pop');
   let ap_uber = window.document.getElementById('ap_uber');
 
-  let combustivel = window.document.getElementById('combustivel');
   let total_km = window.document.getElementById('total_km');
+  let media_de_consumo = window.document.getElementById('media_de_consumo');
+  let valor_do_litro = window.document.getElementById('valor_do_litro').value;
 
   let real_km = window.document.getElementById('real_km');
   let res = window.document.getElementById('res');
 
+  let consumo_diario = window.document.getElementById('consumo_diario');
+  let litros_em_R$ = window.document.getElementById('litros_em_R$');
+
   let total_km_valor = Number(total_km.value); 
-  let combus = Number(combustivel.value);
+  let combustivel = Number(media_de_consumo.value);
   let valor_99pop = Number(ap_99pop.value);
   let valor_uber = Number(ap_uber.value);
 
+  let consumo_em_litros = total_km_valor / combustivel;
+  let custo_diario = consumo_em_litros * valor_do_litro;
+
+
   let valor_bruto = valor_99pop + valor_uber;
-  let valor_liquido = valor_bruto - combus;
+  let valor_liquido = valor_bruto - custo_diario;
   let km_rodados = valor_liquido / total_km_valor;
 
   res.innerHTML = ` --  O seu valor liquído <strong>R$: ${valor_liquido.toFixed(2)}</strong>`;
   real_km.innerHTML = ` --  Seu Kilometro saiu à: <strong>R$: ${km_rodados.toFixed(2)}</strong> por km rodados.`;
+  consumo_diario.innerHTML = `Sua média de consumo: Aproximadamente <strong>${consumo_em_litros.toFixed(2)}</strong> litros`;
+  litros_em_R$.innerHTML = `Gasto diário: Aproximadamente <strong>R$: ${custo_diario}</strong>`;
 
   if (km_rodados.toFixed(2) <= Number(1.50)) {
     lucro_ou_perda.innerHTML = ` -- <strong>(ATENÇÃO)</strong> Obteve prejuízo!!!`

@@ -27,14 +27,24 @@
                 <input type="number" id="ap_uber" min="0">
             </div>
 
-            <div class="input-group">
+            <!-- <div class="input-group">
                 <label for="combustivel">Combustível: </label>
                 <input type="number" id="combustivel" min="0" required>
-            </div>
+            </div> -->
 
             <div class="input-group">
                 <label for="total_km">Km rodados:</label>
                 <input type="number" id="total_km" min="0" required>
+            </div>
+
+            <div class="input-group">
+                <label for="media_de_consumo">Média de consumo diário:</label>
+                <input type="number" id="media_de_consumo" min="0" required>
+            </div>
+
+            <div class="input-group">
+                <label for="valor_do_litro">Valor do combústivel em litro:</label>
+                <input type="number" id="valor_do_litro" min="0" required>
             </div>
 
             <input type="button" value="Calcular" onclick="calcular()">
@@ -49,6 +59,10 @@
             <p id="res"> --  </p>
             <p id="real_km"> --  </p>
             <p id="lucro_ou_perda"> --  </p>
+            <p>-----------------------------------</p>
+            <p id="consumo_diario"> --  </p>
+            <p id="litros_em_R$"> --  </p>
+
             
         </div>
     </section>

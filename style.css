@@ -32,7 +32,7 @@ body {
 .regiao-principal > div {
     height: auto;
     margin-top: 20px;
-    border: solid 1px #ccc;
+    border: solid 1px #000000;
     width: 350px;
     display: flex;
     flex-direction: column; /* Manter a coluna principal para as "linhas" */
