@@ -30,10 +30,10 @@ function calcular() {
   let valor_liquido = valor_bruto - custo_diario;
   let km_rodados = valor_liquido / total_km_valor;
 
-  res.innerHTML = ` --  O seu valor liquído <strong>R$: ${valor_liquido.toFixed(2)}</strong>`;
-  real_km.innerHTML = ` --  Seu Kilometro saiu à: <strong>R$: ${km_rodados.toFixed(2)}</strong> por km rodados.`;
-  consumo_diario.innerHTML = `Sua média de consumo: Aproximadamente <strong>${consumo_em_litros.toFixed(2)}</strong> litros`;
-  litros_em_R$.innerHTML = `Gasto diário: Aproximadamente <strong>R$: ${custo_diario}</strong>`;
+  res.innerHTML = ` --  Lucro liquído <strong>R$: ${valor_liquido.toFixed(2)}</strong>`;
+  real_km.innerHTML = ` --  Seu kilometro saiu à: <strong>R$: ${km_rodados.toFixed(2)}</strong> por km rodados.`;
+  litros_em_R$.innerHTML = ` --  Gasto total de combústivel: Aproximadamente <strong>R$: ${custo_diario.toFixed(2)}</strong>`;
+  consumo_diario.innerHTML = ` --  Aproximadamente <strong>${consumo_em_litros.toFixed(2)} litros</strong>.`;
 
   if (km_rodados.toFixed(2) <= Number(1.50)) {
     lucro_ou_perda.innerHTML = ` -- <strong>(ATENÇÃO)</strong> Obteve prejuízo!!!`
