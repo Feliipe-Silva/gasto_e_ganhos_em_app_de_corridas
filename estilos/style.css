@@ -123,6 +123,8 @@ body {
 
 #lucro_ou_perda > #parabens {
     color: green;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
 }
 
 div[class="footer"] {
