@@ -35,7 +35,7 @@ function calcular() {
   real_km.innerHTML = ` --  Seu kilometro saiu à: <strong>R$: ${km_rodados.toFixed(2)}</strong> por km rodados.`;
   litros_em_R$.innerHTML = ` --  Consumo de combústivel: Aproximadamente <strong>${consumo_em_litros.toFixed(2)} litros</strong> / <strong>R$: ${custo_diario.toFixed(2)}</strong>`;
 
-  if (km_rodados.toFixed(2) <= Number(1.50)) {
+  if (km_rodados.toFixed(2) <= Number(1.60)) {
     lucro_ou_perda.innerHTML = ` -- <strong>(ATENÇÃO)</strong> Obteve prejuízo!!!`
     
   } else {
